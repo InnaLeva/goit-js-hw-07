@@ -28,7 +28,7 @@ const images = [
 ];
 
 
-const listImags = document.querySelector('.gallery');
+const listImags = document.querySelector('.gallery'); 
 
 const makeImagesItems = ({ url, alt }) => `<li><img src="${url}" width="400" alt="${alt}"></img></li>`;
 
@@ -42,3 +42,25 @@ listImags.style.display = 'flex';
 listImags.style.flexWrap = 'column-reverse';
 listImags.style.gap = '30px';
 listImags.style.jystifyContent = 'center';
+
+
+/*Напиши скрипт для створення галереї зображень на основі масиву даних. HTML містить список ul.gallery.
+
+<ul class="gallery"></ul>
+
+
+
+Використовуй масив об'єктів images для створення елементів <img>, вкладених в <li>.
+
+Ти можеш створити й додати HTML-елементи, використовуючи document.createElement() і elem.append() або шаблонні рядки і elem.insertAdjacentHTML().
+
+Усі елементи галереї повинні додаватися в DOM за одну операцію додавання.
+Додай мінімальне оформлення галереї флексбоксами через CSS класи.
+
+На що буде звертати увагу ментор при перевірці:
+
+Створена й додана в DOM галерея із трьох зображень
+Галерея додана у список ul.gallery і являє собою 3 елементи <li>, в які вкладені елементи <img>
+Для створення елементів <img> використані дані з масиву об’єктів images
+Усі елементи галереї додані в DOM за одну операцію додавання
+Є мінімальне оформлення галереї флексбоксами через CSS класи*/
